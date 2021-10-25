@@ -13,7 +13,8 @@ class RegistrationController extends Controller
         $data = Registration::all();
         return response()->json([
             'status'=>200,
-            'msg'=>'ok'
+            'msg'=>'ok',
+            'data'=>$data
         ]);
     }
 }
