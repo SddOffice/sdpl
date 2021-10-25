@@ -15,6 +15,7 @@ class RegistrationController extends Controller
             'status'=>200,
             'msg'=>'ok',
             'data'=>$data
+            
         ]);
     }
 }
