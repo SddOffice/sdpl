@@ -21,11 +21,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('admin', [RegistrationController::class, 'index']);
+Route::post('registration', [RegistrationController::class, 'registration']);
 
 
-// ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '!*Sdpldb@99!*';
-// CREATE USER 'sdpl'@'localhost' IDENTIFIED WITH caching_sha2_password BY '!*Sdpldb@99!*';
+
 
 
 
